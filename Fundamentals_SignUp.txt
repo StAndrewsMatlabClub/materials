@@ -1,0 +1,10 @@
+Matlab club fundamentals sign up sheet
+
+For next week’s session please pick a topic from the Matlab fundamentals here: http://www.mathworks.com/help/matlab/language-fundamentals.html
+
+Once you’ve decided on a topic, write your name and your chosen topic here so that nobody picks the same topic. 
+
+Thanks!
+————
+
+Abigail — Matrices and Arrays: Array Creation and Concatenation
