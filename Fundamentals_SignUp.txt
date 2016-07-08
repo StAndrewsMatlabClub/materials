@@ -9,3 +9,4 @@ Thanks!
 
 Abigail — Matrices and Arrays: Array Creation and Concatenation
 Bobby - Operators and Elementary Operations: Logical Operations
+Ben — Matrices and Arrays: Indexing
