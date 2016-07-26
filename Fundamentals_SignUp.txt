@@ -13,4 +13,4 @@ Ben — Matrices and Arrays: Indexing
 Ken - Anonymous functions
 Jos - Special characters
 
-Bobby - 'deal()', Profiler Tool, Set Operations
+Bobby - 'deal()', Profiler Tool
