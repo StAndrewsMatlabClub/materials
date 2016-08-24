@@ -55,6 +55,8 @@ regexp(line, re, 'match') # => '100'    '23.50'    '43.1'    '1001'    '24.3'
 ### Notes ###
 
 * Alpha-numeric characters, match literally, e.g., a regex of 'test' will simply match 'test'.
-* '.' is used to match any character in an regex, which means that we have to escape it with a '\\.'. There are quite a few other special characters used in regular expressions which also need to be escaped.
+* '.' is used to match any character in an regex, which means that we have to escape it with a backslash, '\\.'. There are quite a few other special characters used in regular expressions which also need to be escaped if they are to be literally matched.
 
-[Further Matlab details](http://uk.mathworks.com/help/matlab/matlab_prog/regular-expressions.html#f0-42884)
+[Matlab Regular Expressions](http://uk.mathworks.com/help/matlab/matlab_prog/regular-expressions.html#f0-42884)
+
+#### Ken 2016-08-24 ####
