@@ -13,17 +13,24 @@ try
     Screen('FrameRect',expInfo.curWindow,rectColor,rectSize)
     Screen('flip',expInfo.curWindow)
     
-    PsychPortAudio('Volume', expInfo.audioInfo.pahandle, 0.5); %the volume of the beep
+    key = 220;
+    semiToneRatio = 2.^((0:12)/12);
+    song = [0 3 5 0 3 6 5]+1;
+    song2 = [0 3 5 0 3 6 5]+5+1;
+    songDur = [2 2 2 2 2 1 2 ]/4;
     
-    intervalBeep = MakeBeep(500, expInfo.audioInfo.beepLength, expInfo.audioInfo.samplingFreq);
-    
+    for iSong = 1:length(song),
+    PsychPortAudio('Volume', expInfo.audioInfo.pahandle, 0.7); %the volume of the beep
+    expInfo.audioInfo.beepLength = songDur(iSong);
+    intervalBeep = MakeBeep(key*semiToneRatio(song(iSong)), expInfo.audioInfo.beepLength, expInfo.audioInfo.samplingFreq);     
+    intervalBeep2 = MakeBeep(key*semiToneRatio(song2(iSong)), expInfo.audioInfo.beepLength, expInfo.audioInfo.samplingFreq);     
+    intervalBeep = intervalBeep + intervalBeep2;
     PsychPortAudio('FillBuffer', expInfo.audioInfo.pahandle, [intervalBeep; intervalBeep]);
-    
-    PsychPortAudio('Start', expInfo.audioInfo.pahandle, expInfo.audioInfo.nReps, expInfo.audioInfo.startCue);
-    
-    WaitSecs(expInfo.audioInfo.beepLength);
-    
+    PsychPortAudio('Start', expInfo.audioInfo.pahandle, expInfo.audioInfo.nReps, expInfo.audioInfo.startCue);    
+    WaitSecs(expInfo.audioInfo.beepLength);    
     PsychPortAudio('Stop', expInfo.audioInfo.pahandle);
+    end
+    
     KbWait;
     
     
