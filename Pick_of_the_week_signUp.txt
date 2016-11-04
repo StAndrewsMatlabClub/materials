@@ -1,6 +1,11 @@
 A sign up sheet for the “pick of the week” session.
 
+
+24/08/16 session ———————————————————————————————————————————————————
 Abi — ‘Getting short path names’ and ‘Distribute your figures’
 Ken - Flatten (Nested) Cell Arrays - http://blogs.mathworks.com/pick/2016/05/13/flatten-nested-cell-arrays/
 Bobby - Automtic text placement: http://blogs.mathworks.com/pick/2009/01/02/automatic-text-placement/
       - Lasso:                   http://blogs.mathworks.com/pick/2009/09/25/lassom/ 
+
+
+09/11/16 session ———————————————————————————————————————————————————
